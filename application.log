@@ -1,0 +1,183 @@
+2024-09-25T11:49:30.017+05:30  INFO 5284 --- [ORDER-SERVICE] [main] c.m.os.api.OrderServiceApplication       : Starting OrderServiceApplication using Java 21.0.4 with PID 5284 (D:\Sachin\Microservice\order-service\target\classes started by sachin in D:\Sachin\Microservice)
+2024-09-25T11:49:30.022+05:30  INFO 5284 --- [ORDER-SERVICE] [main] c.m.os.api.OrderServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T11:49:30.188+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9196
+2024-09-25T11:49:30.188+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=ad53492d8e017a860f1f54adc18e071e25eb9614, state=null
+2024-09-25T11:49:34.411+05:30  INFO 5284 --- [ORDER-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T11:49:35.395+05:30  INFO 5284 --- [ORDER-SERVICE] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 953 ms. Found 1 JPA repository interface.
+2024-09-25T11:49:36.940+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d868c065-9a3e-3db3-b038-533b7eef7f6d
+2024-09-25T11:49:38.739+05:30  WARN 5284 --- [ORDER-SERVICE] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-25T11:49:38.765+05:30  WARN 5284 --- [ORDER-SERVICE] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-25T11:49:40.094+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-09-25T11:49:40.134+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T11:49:40.135+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-25T11:49:40.552+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T11:49:40.553+05:30  INFO 5284 --- [ORDER-SERVICE] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10359 ms
+2024-09-25T11:49:42.172+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-09-25T11:49:42.961+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T11:49:43.348+05:30  INFO 5284 --- [ORDER-SERVICE] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T11:49:43.559+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T11:49:44.801+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T11:49:44.889+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T11:49:46.205+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2259d54f
+2024-09-25T11:49:46.209+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T11:49:52.552+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T11:49:53.384+05:30  INFO 5284 --- [ORDER-SERVICE] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T11:49:53.809+05:30  WARN 5284 --- [ORDER-SERVICE] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T11:49:55.696+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-09-25T11:49:57.885+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-25T11:49:58.186+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-25T11:49:58.350+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-25T11:50:07.522+05:30  INFO 5284 --- [ORDER-SERVICE] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-09-25T11:50:08.419+05:30  WARN 5284 --- [ORDER-SERVICE] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-25T11:50:08.444+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2024-09-25T11:50:10.116+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-25T11:50:10.202+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-25T11:50:10.212+05:30  INFO 5284 --- [ORDER-SERVICE] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-25T11:50:10.234+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-25T11:50:10.235+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-25T11:50:10.235+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-25T11:50:10.235+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-25T11:50:10.236+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-25T11:50:10.236+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-09-25T11:50:10.236+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-25T11:50:11.488+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2024-09-25T11:50:11.756+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:50:11.923+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:50:11.966+05:30 DEBUG 5284 --- [ORDER-SERVICE] [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:50:12.066+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-25T11:50:12.071+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-09-25T11:50:12.075+05:30  INFO 5284 --- [ORDER-SERVICE] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-25T11:50:12.079+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1727245212078 with initial instances count: 2
+2024-09-25T11:50:12.098+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2024-09-25T11:50:12.100+05:30  INFO 5284 --- [ORDER-SERVICE] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1727245212099, current=UP, previous=STARTING]
+2024-09-25T11:50:12.115+05:30  INFO 5284 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082: registering service...
+2024-09-25T11:50:12.123+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/ORDER-SERVICE
+2024-09-25T11:50:12.128+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:50:12.164+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = DESKTOP-MSR3RF8:ORDER-SERVICE:8082, appName = ORDER-SERVICE, hostName = localhost, status = UP, ipAddr = 192.168.1.250, port = 8082, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3435b6d8] as "application/json"
+2024-09-25T11:50:12.281+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2024-09-25T11:50:12.282+05:30  INFO 5284 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082 - registration status: 204
+2024-09-25T11:50:12.430+05:30  INFO 5284 --- [ORDER-SERVICE] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-09-25T11:50:12.435+05:30  INFO 5284 --- [ORDER-SERVICE] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2024-09-25T11:50:12.686+05:30  INFO 5284 --- [ORDER-SERVICE] [main] c.m.os.api.OrderServiceApplication       : Started OrderServiceApplication in 47.415 seconds (process running for 49.05)
+2024-09-25T11:50:42.085+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:50:42.086+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:50:42.087+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:50:42.103+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:50:42.105+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:50:42.106+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:50:42.118+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:51:12.126+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:51:12.127+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:51:12.141+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:51:12.143+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:51:12.147+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:51:12.147+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:51:12.160+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:51:42.164+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:51:42.166+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:51:42.180+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:51:42.181+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:51:42.184+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:51:42.185+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:51:42.199+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:52:12.212+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:52:12.214+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:52:12.216+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:52:12.217+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:52:12.231+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:52:12.231+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:52:12.232+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:52:20.829+05:30  INFO 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T11:52:20.830+05:30  INFO 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T11:52:20.830+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-09-25T11:52:20.831+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-09-25T11:52:20.831+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-09-25T11:52:20.833+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@66464f27
+2024-09-25T11:52:20.834+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@52bcd7c9
+2024-09-25T11:52:20.837+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-25T11:52:20.838+05:30  INFO 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-09-25T11:52:20.862+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/order/bookOrder", parameters={}
+2024-09-25T11:52:20.876+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.microservices.os.api.controller.OrderController#bookOrder(TransactionRequest)
+2024-09-25T11:52:21.031+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TransactionRequest(order=OrderEntity(id=18, name=IQOO phone 2, quantity=3, price=80000.99), payment= (truncated)...]
+2024-09-25T11:52:21.080+05:30  INFO 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] c.m.os.api.service.OrderService          : Order Service Request: {"order":{"id":18,"name":"IQOO phone 2","quantity":3,"price":80000.99},"payment":{"paymentId":0,"paymentStatus":null,"transactionId":null,"orderId":18,"amount":80000.99}}
+2024-09-25T11:52:21.083+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://PAYMENT-SERVICE/payment/doPayment
+2024-09-25T11:52:21.092+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:52:21.095+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.client.RestTemplate              : Writing [Payment(paymentId=0, paymentStatus=null, transactionId=null, orderId=18, amount=80000.99)] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2024-09-25T11:52:22.165+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:52:22.166+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.client.RestTemplate              : Reading to [com.microservices.os.api.commondto.Payment]
+2024-09-25T11:52:22.171+05:30  INFO 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] c.m.os.api.service.OrderService          : Order Service Response: {"paymentId":77,"paymentStatus":"Success","transactionId":"321d0677-f1f5-404e-b185-3e1f0153b69b","orderId":18,"amount":80000.99}
+2024-09-25T11:52:23.728+05:30  INFO 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] c.m.os.api.service.OrderService          : Execution time:
+2024-09-25T11:52:23.757+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-25T11:52:23.766+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [TransactionResponse(order=OrderEntity(id=18, name=IQOO phone 2, quantity=3, price=80000.99), tansact (truncated)...]
+2024-09-25T11:52:23.787+05:30 DEBUG 5284 --- [ORDER-SERVICE] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-09-25T11:52:42.258+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:52:42.258+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:52:42.259+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:52:42.259+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:52:42.277+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:52:42.278+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:52:42.280+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:53:12.301+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:53:12.301+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:53:12.303+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:53:12.303+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:53:12.322+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:53:12.322+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:53:12.322+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:53:42.334+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:53:42.337+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:53:42.350+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:53:42.352+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:53:42.356+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:53:42.374+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:53:42.375+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:54:12.375+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:54:12.378+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:54:12.390+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:54:12.392+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:54:12.395+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:54:12.412+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:54:12.413+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:54:42.419+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:54:42.423+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:54:42.435+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:54:42.437+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:54:42.444+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:54:42.455+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:54:42.456+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:55:10.327+05:30  INFO 5284 --- [ORDER-SERVICE] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-25T11:55:12.470+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:55:12.472+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:55:12.474+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:55:12.475+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:55:12.487+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:55:12.488+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:55:12.490+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:55:42.546+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:55:42.546+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:55:42.547+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:55:42.547+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:55:42.564+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:55:42.566+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:55:42.566+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:56:12.588+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:56:12.588+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:56:12.589+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:56:12.589+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:56:12.609+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:56:12.609+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:56:12.610+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:56:42.630+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:56:42.630+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:56:42.632+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:56:42.632+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:56:42.650+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:56:42.651+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:56:42.651+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:57:12.666+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/delta
+2024-09-25T11:57:12.668+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:57:12.671+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8761/eureka/apps/ORDER-SERVICE/DESKTOP-MSR3RF8:ORDER-SERVICE:8082?status=UP&lastDirtyTimestamp=1727245212099
+2024-09-25T11:57:12.672+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2024-09-25T11:57:12.686+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2024-09-25T11:57:12.686+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-09-25T11:57:12.687+05:30 DEBUG 5284 --- [ORDER-SERVICE] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK

@@ -1,0 +1,59 @@
+#spring:
+#  application:
+#    name: CLOUD-GATEWAY
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: order-service
+#          uri: lb://ORDER-SERVICE
+#          predicates:
+#            - Path=/order/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: orderserviceCB
+#                fallbackUri: forward:/fallback/orderFallback
+#        - id: payment-service
+#          uri: lb://PAYMENT-SERVICE
+#          predicates:
+#            - Path=/payment/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: paymentserviceCB
+#                fallbackUri: forward:/fallback/paymentFallback
+#  gateway:
+#    httpclient:
+#      responseTimeout: 3000
+#
+#server:
+#  port: 9090
+#
+##eureka:
+##  client:
+##    service-url:
+##      defaultZone: http://localhost:8761/eureka/
+##    register-with-eureka: true
+##    fetch-registry: true
+##    registry-fetch-interval-seconds: 5
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: hystrix.stream
+#  endpoint:
+#    hystrix:
+#      enabled: true
+#    health:
+#      show-details: always
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 5000
+#          strategy: THREAD
+#

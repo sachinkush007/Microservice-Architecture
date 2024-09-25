@@ -1,0 +1,20 @@
+#spring.application.name=payment-service
+spring:
+  application:
+    name: PAYMENT-SERVICE
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:file:C:/Users/sachi/test;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+
