@@ -33,21 +33,28 @@ public class OrderService {
     public TransactionResponse saveOrder(TransactionRequest request) throws JsonProcessingException {
         long startTime = System.currentTimeMillis();
         String message = "";
-        OrderEntity order = request.getOrder();
-        Payment payment = request.getPayment();
 
+        OrderEntity order = request.getOrder();
+
+        // ✅ 1. Save order FIRST
+        OrderEntity savedOrder = orderRepository.save(order);
+
+        // ✅ 2. Prepare payment
+        Payment payment = request.getPayment();
         payment.setOrderId(order.getId());
         payment.setAmount(order.getPrice());
         log.info("Order Service Request: {}", new ObjectMapper().writeValueAsString(request));
 
-        //Rest call
+        // ✅ 3. Call payment service
         Payment paymentResponse = restTemplate.postForObject(PAYMENT_ENDPOINT_URL, payment, Payment.class);
         log.info("Order Service Response: {}", new ObjectMapper().writeValueAsString(paymentResponse));
 
         message = paymentResponse.getPaymentStatus().equals("Success") ? "Payment Successfull" : "There is problem with your payment! please try again";
-        orderRepository.save(order);
+        // orderRepository.save(order);
         long endTime = System.currentTimeMillis();
         log.info("Execution time:", (endTime - startTime));
+
+        // ✅ 4. Final response
         return new TransactionResponse(order, paymentResponse.getTransactionId(), paymentResponse.getAmount(), message);
     }
 }
